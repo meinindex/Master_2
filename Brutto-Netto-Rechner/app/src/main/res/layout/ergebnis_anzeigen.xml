@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nettobetrag" />
+
+        <TextView
+            android:id="@+id/tv_nettobetrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_umsatzsteuer"/>
+        <TextView
+            android:id="@+id/tv_umsatzsteuer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_bruttobetrag"/>
+
+        <TextView
+            android:id="@+id/tv_bruttobetrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+</TableLayout>

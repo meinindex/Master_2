@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Brutto-Netto-Rechner</string>
+    <string name="txt_anweisung">Geben Sie einen Brutto oder Netto Betrag ein und lassen Sie
+    sich die Umsatzsteier ausgeben</string>
+    <string name="txt_netto">Netto</string>
+    <string name="txt_brutto">Brutto</string>
+    <string name="txt_nettobetrag">Nettobetrag:</string>
+    <string name="txt_umsatzsteuer">Umsatzsteuer</string>
+    <string name="txt_bruttobetrag">Bruttobetrag:</string>
+    <string name="txt_berechnen">Berechnen</string>
+
+    <!--Menüeintrag-->
+    <string name="menu_ende">Beenden</string>
+</resources>

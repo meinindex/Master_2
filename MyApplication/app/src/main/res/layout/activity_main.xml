@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--Linear Layout as root view -> fill the entire screen
+via setting match_parent-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--@ required if you are referring to any resource Object from XML; + if resource id is defined for the first time-->
+    <!--Wrap Content -> view just as big, as needed; if there is match parent, it would fill the whole screen-->
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message" />
+    <!--Button send calls senMessage()- Method, when button is used-->
+    <!--Define sendMessage in MainActivity.java-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:onClick="sendMessage" />
+
+</LinearLayout>

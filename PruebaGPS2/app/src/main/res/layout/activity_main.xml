@@ -21,16 +21,13 @@
             android:layout_height="wrap_content"
             android:text="Mi Ubicacion"
             android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
-            android:paddingLeft="35dp"/>
+            android:layout_marginTop="15dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Provendor"
-            android:id="@+id/txtGPS"
-            android:layout_paddingBottom="10dp"/>
+            android:id="@+id/txtGPS"/>
 
         <TextView
             android:layout_width="wrap_content"

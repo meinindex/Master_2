@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GoogleMapDemo_changePicker.iml" filepath="$PROJECT_DIR$/GoogleMapDemo_changePicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoogleMapDemo_changePicker_Origin.iml" filepath="$PROJECT_DIR$/GoogleMapDemo_changePicker_Origin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

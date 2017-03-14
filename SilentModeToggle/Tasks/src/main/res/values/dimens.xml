@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Steg links und rechts auf den meisten unserer Seiten-->
+    <dimen name="gutter">10dp</dimen>
+    <!--Halber Abstand zwischen den Task-Karten. Voller Abstand verdoppelt die Zahl-->
+    <dimen name="task_card_half_spacing">5dp</dimen>
+
+    <!--Hervorhebung der Task-Karten-->
+    <dimen name="task_card_elevation">6dp</dimen>
+</resources>

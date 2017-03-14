@@ -19,7 +19,7 @@ public class Silent_Mode_Toggle extends Activity {
         // immer zuerst das hier aufrufen
         super.onCreate(savedInstanceState);
 
-        /*Verweis auf den AudioManager abrufen, sodass wir ihm zum
+        /*Referenz auf den AudioManager von Android abrufen, sodass wir ihm zum
         * Umschalten auf den Klingelton verwenden können.*/
         audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
 
@@ -43,6 +43,12 @@ public class Silent_Mode_Toggle extends Activity {
                 updateUi();
             }
         });
+        Log.d("SilentModeAPP", "Dies ist ein Test");
+        /*d:Debugging-Eintrag
+        * I: Information
+        * w: Warnung
+        * wtf: What a terrible failure (Fürchterlicher Fehler)
+        * v: ausführlich (verbose)*/
     }
 
     /*Aktualisiert das Bild auf der UI, das zeigt,
@@ -53,11 +59,12 @@ public class Silent_Mode_Toggle extends Activity {
         ImageView imageView = (ImageView) findViewById(R.id.phone_icon);
 
         /*PhoneImage auf die Id des Bildes setzen, das anzeigt,
-        ob der Klingelton aktiviert ist oder nicht. Bilder in  drawable-xxhdpi*/
+        ob der Klingelton aktiviert ist oder nicht. Bilder in  mipmap-xxhdpi*/
+        /*(<boolescher Ausdruck>) ? AusgabewertTrue : AusgabewertFalse;*/
 
-        int phoneImage = RingerHelper.isPhoneSilent(audioManager)
-                ? R.mipmap.ringer_off
-                : R.mipmap.ringer_on;
+        int phoneImage = RingerHelper.isPhoneSilent(audioManager)                   // Ternary Operator If-Else nur kürzer
+                ? R.mipmap.ringer_off                                               // gibt isPhoneSilent true, dann das
+                : R.mipmap.ringer_on;                                               // sonst das
 
         //ImageView auf das Bild des phoneImage setzen
         imageView.setImageResource(phoneImage);

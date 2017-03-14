@@ -11,4 +11,9 @@
         android:layout_gravity="center"
         android:src="@mipmap/ringer_on"/>
     <!--gravity legt fest, wie die View platziert werden soll-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ein Wiener Schnitzel bitte."/>
 </FrameLayout>

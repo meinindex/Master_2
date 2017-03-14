@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Silent Mode Toggle</string>
+    <string name="title">Silent</string>
+    <string name="toggle_silent_mode">Silent</string>
+    <string name="add_widget">Add widget</string>
 </resources>
+

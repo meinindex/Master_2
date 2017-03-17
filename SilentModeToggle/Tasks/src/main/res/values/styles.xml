@@ -1,8 +1,40 @@
-<resources>
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Tasks</string>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
-        <!-- Customize your theme here. -->
+    <!--Definition der Farben, die in App immer wieder verwende-->
+    <color name="primary">#1eabf2</color>                                       <!--App Hauptfarbe-->
+    <color name="primary_dark">#178acf</color>                                  <!--etwas dunkler, wird in Statusleiste verwendet-->
+    <color name="accent">#ffb936</color>                                        <!--Farbe, die genutzt wird, um Aufmerksamkeit auf Dinge zu lenken-->
+    <color name="window_background">#c1dae6</color>                             <!--Hintergrundfarbe-->
+
+    <style name="AppTheme"
+        parent="android:Theme.Material.NoActionBar">                            <!--aktualisiere das AppTheme mit den definierten Farben-->
+
+        <!--KartenFarbe-->
+
+        <!--Markenfarbe für die App (App-Leiste)-->
+        <item name="android:colorPrimary">@color/primary</item>
+
+        <!--dunklere Variante von colorPrimary(Für Statusleiste, Kontext-Leisten der App)-->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+
+        <!-- UI-Steuerelemente des Themas, z. Bsp. Kontrollkästchen und Textfelder-->
+        <item name="android:colorAccent">@color/accent</item>
+
+        <!--Hintergrundfarbe des Fensters-->
+        <item name="android:windowBackground">@color/window_background</item>
+
+        <!--Hintergrund der Navigationsleiste des Gerätes (Sichtbar, wenn das Gerät keine physischen
+        Navigationsleisten besitzt)-->
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+
+        <!--Primäre inverse Textfarbe für Dinge wie die Aktionsleist, Auskommentiert, weil wir
+        gerne die Standardwerte verwenden. Entferne den Kommentar, dann kannst du eigene Farben
+        festlegen-->
+        <!-- <item name="android:textColorPrimary">@color/text_color_primary_inverse</item>-->
+         <!-- <item name="android:textColorPrimaryInverse">@color/text_color_primary_inverse</item>-->
+
     </style>
 
 </resources>

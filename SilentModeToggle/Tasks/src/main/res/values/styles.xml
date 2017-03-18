@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <string name="app_name">Tasks</string>
 
-    <!--Definition der Farben, die in App immer wieder verwende-->
-    <color name="primary">#1eabf2</color>                                       <!--App Hauptfarbe-->
-    <color name="primary_dark">#178acf</color>                                  <!--etwas dunkler, wird in Statusleiste verwendet-->
-    <color name="accent">#ffb936</color>                                        <!--Farbe, die genutzt wird, um Aufmerksamkeit auf Dinge zu lenken-->
-    <color name="window_background">#c1dae6</color>                             <!--Hintergrundfarbe-->
+
 
     <style name="AppTheme"
         parent="android:Theme.Material.NoActionBar">                            <!--aktualisiere das AppTheme mit den definierten Farben-->

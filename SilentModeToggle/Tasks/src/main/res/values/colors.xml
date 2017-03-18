@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="text_color_primary_inverse">#ffb936</color>
+
+    <!--Definition der Farben, die in App immer wieder verwendet-->
+    <color name="primary">#1eabf2</color>                                       <!--App Hauptfarbe-->
+    <color name="primary_dark">#178acf</color>                                  <!--etwas dunkler, wird in Statusleiste verwendet-->
+    <color name="accent">#ffb936</color>                                        <!--Farbe, die genutzt wird, um Aufmerksamkeit auf Dinge zu lenken-->
+    <color name="window_background">#c1dae6</color>                             <!--Hintergrundfarbe-->
+
 </resources>

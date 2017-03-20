@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Platzierung des Bearbeitungsfragments in einer Scroll View, Ohne sieht Benutzer bei kleinen geräten,
+    oder im Querformat den unteren Bildschirmrand nicht. Die meisten Bildschirme sollten in einer ScrollView
+    unterbrochen werden, außer Views wie die RecyclerView, die eine eigene, eingebaute Scroll-Funktion besitzen-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Positioniert Dinge relativ zueinander -> um nutzen zu können, muss Positionierungsbefehler verwenden
+        layout_below
+        layout_align_Start
+        layout_parentStart
+        Beispiele für die Befehle finden sich in dne untergeordneten Views-->
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/actionBarSize"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"/>
+        <!--Das Gleiche Bild, das auch in der Listen-view verwendet wird, aber hier wird das gesamte Bild, statt
+        es zuzuschneiden.
+        adjustViewBounds, sodass sich die Image View selbst verkleinert oder vergrößert, um die richtige Größe zu haben, nachdem
+        es geladen wurde. minHeight auf die Höhe der Aktionsleiste setzen, sodass die Aktionsleiste nicht das Titelfeld
+        verdeckt, wenn das Bild noch nicht zurVerfügung steht.-->
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter"
+            android:layout_marginEnd="@dimen/gutter"
+            android:layout_below="@id/image"
+            android:hint="@string/title"/>
+        <!--Titel des Tasks durch Benutzer bearbeitbar. Hinweistext "Title" weist den Nutzer darauf hin, dass bearbeitet
+        werden darf @dimen/gutter ist der Steg, den wir links und rechts als Abstand haben.
+        Anstatt marginStart und marginEnd kann marginLeft und marginRight verwendet werden.
+        Start und End funktionieren aber auch in Ländern mit Sprachen wie arabisch, in denen die Leserichtung eine andere ist,
+         sollte die App übersetzt werden.
+         layout_below -> Titel direkt unter Bild im Layout
+         Alle Layoutparameter beziehen sich auf Layout-View, der diese TextView untergeordnet ist, hier ist es ein
+         Relative Layout
+         android:hint -> Text der angezeigt wird, wenn Textfeld leer ist-->
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:id="@+id/task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignEnd="@id/title"
+            android:layout_marginEnd="3dp"/>
+        <!--Zeit Schalfläche
+        @android:style/TextAppearance.Medium -> Android Standardstil für Textviews -> vergrößert Text, damit anklickbar ist
+        layout_below & layout_alignEnd -> unterhalb des Titels und rechts davon
+        http://d.android.com/reference/android/R.style.html#TextAppearance
+        layout_marginEnd -> extra Füllung rechts von der View, damit Textzeile an der darüber befindlichen horizontalen Zeile
+        ausgerichtet ist.-->
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:id="@+id/task_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/task_time"
+            android:layout_alignBottom="@id/task_time"
+            android:layout_marginEnd="10dp"/>
+        <!--Datums-Schaltfläche links von der Zeit-Schaltfläche
+        layout_toStartOf & layout_alignBottom -> Datums-Schaltfläche links von Zeit-Schaltfläche und richtet die Unterseite von
+        Datum und Zeit aneinander aus, sodass auf einer Linie liegen
+        layout_alignBottom -> Fügt rechts von EditText etwas Füllung ein, um abstand zwischen Datums- und Zeittext zu schaffen.
+        Ohne Abstand sehen beide Texte sehr unübersichtlich aus.-->
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/title"
+            android:layout_marginEnd="@dimen/gutter"
+            android:layout_above="@id/task_time"
+            android:gravity="top"
+            android:hint="@string/notes"
+            android:minLines="5"/>
+        <!--Standard gravity für TextView& EditText ist center
+        minLines -> setze mindestens fünf Zeilen für TextView-->
+
+    </RelativeLayout>
+
+</ScrollView>

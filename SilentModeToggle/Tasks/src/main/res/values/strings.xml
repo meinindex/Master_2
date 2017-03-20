@@ -1,5 +1,10 @@
 <resources>
    <!-- <string name="app_name">Tasks</string>-->
-   <string name="app_name">Tasks</string>
+    <string name="app_name">Tasks</string>
     <string name="title_activity_task_edit">TaskEditActivity</string>
+
+    <!--Strings in fragment_task_edit.xml Hinweistexte-->
+    <string name="notes">Notes</string>
+    <string name="title">Title</string>
+
 </resources>

@@ -1,22 +1,18 @@
 package com.dummies.tasks.adapter;
 
-
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.ColorInt;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.util.StringBuilderPrinter;
 import android.view.LayoutInflater;
+
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.util.Log;
 
 import com.dummies.tasks.R;
+import com.dummies.tasks.interfaces.OnEditTask;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -60,7 +56,7 @@ public class TaskListAdapter extends RecyclerView.Adapter<TaskListAdapter.ViewHo
 
         // Klick-Aktion festlegen auf die cardView
         viewHolder.cardView.setOnClickListener(
-                new View.onClickListener()
+                new View.OnClickListener()
                 {
                     @Override
                     public void onClick(View view)

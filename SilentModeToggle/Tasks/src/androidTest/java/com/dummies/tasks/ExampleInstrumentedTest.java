@@ -1,13 +1,14 @@
 package com.dummies.tasks;
 
+
 import android.content.Context;
-import
+
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static junit.framework.Assert.assertEquals;
-import static org.junit.Assert.*;
+import static junit.framework.TestCase.assertEquals;
+
 
 /**
  * Instrumentation test, which will execute on an Android device.
